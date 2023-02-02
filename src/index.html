@@ -1,14 +1,31 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <header class="header">
+      <div class="container header__container">
+        <a href="./index.html" class="header__logo-film"
+          ><svg width="24px" height="24px">
+            <use href="../src/sass/images/symbol-defs.svg#film"></use>
+          </svg>
+          <span class="header__logo">Filmoteka</span>
+        </a>
+        <form>
+          <input type="text" placeholder="Movie search" />
+        </form>
+      </div>
+    </header>
   </body>
 </html>

@@ -1,0 +1,71 @@
+.header {
+    max-width: 320px;
+    margin-left: auto;
+        margin-right: auto;
+        height: 230px;
+        background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        
+    background-image: url(./images/Mobile320@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(./images/Mobile320@2x.png);
+        }
+
+                 // Tablet
+                 @media screen and (min-width: 768px) {
+                     background-image: url(./images/Tablet768@1x.png);
+                     max-width: 768px;
+                     height: 216px;
+        
+                     @media (min-device-pixel-ratio: 2),
+                     (min-resolution: 192dpi),
+                     (min-resolution: 2dppx) {
+                         background-image: url(./images/Tablet768@2x.png);
+                         max-width: 768px;
+                     }
+        
+                 }
+        
+                 // DeskTop
+                 @media screen and (min-width: 1280px) {
+                     background-image: url(./images/Desktop1280@1x.png);
+                     max-width: 1280px;
+                     height: 216px;
+        
+                     @media (min-device-pixel-ratio: 2),
+                     (min-resolution: 192dpi),
+                     (min-resolution: 2dppx) {
+                         background-image: url(./images/Desktop1280@2x.png);
+                         max-width: 1280px;
+                         
+                     }
+                 }
+}
+
+.header__container {
+   
+    display: flex;
+    
+}
+
+.header__logo {
+    
+        font-style: normal;
+        position: relative;
+        font-size: 30px;
+        line-height: 1,17px;
+       margin-left: 10px;
+        align-items: center;
+        text-align: center;
+    padding-top: 40px;
+        color: #FFFFFF;
+}
+
+.header__logo-film {
+    
+    padding-top: 40px;
+}
